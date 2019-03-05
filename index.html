@@ -3,8 +3,7 @@
 <script src="https://our.news/api/ournews.multibar.js/"></script><script 
 
 src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-            <style>
-                        body {
+          body {
   font-family: Georgia, sans-serif;
   background-color: lightGray;
   color: #004;
@@ -22,62 +21,25 @@ main {
 p {
   line-height: 1.4;
 }
-a {
-  color: inherit;
-  text-decoration: none;
-  background: gray;
-  background: linear-gradient(currentColor, currentColor) 0 1em / calc(100% - 0.2ch) 1px no-repeat;
-}
+
 a .link-note {
   display: block;
   float: right;
   clear: right;
   position: relative;
-  width: 11rem;
+  width: 16em;
   box-sizing: border-box;
   margin-right: -12rem;
   padding: 0.5rem;
   margin-bottom: 0.5rem;
   background: lightgray;
   font-size: 90%;
-  line-height: 30px;
+  line-height: 1.1;
 }
-a .link-note::before {
-  content: " ";
-  display: block;
-  margin: 0 0.2rem 0.2rem 0.6rem;
-}
-a .link-note.book::before {
-  content: "📖";
-} 
-a .link-note.article::before {
-  content: "📰";
-} 
-a .link-note.picture::before {
-  content: "🖼️";
-} 
-a .link-note::after {
-  content: "";
-  display: block;
-  box-sizing: border-box;
-  width: 1.2rem; height: 1.2rem;
-  top: 0.25rem;
-  left: -0.5rem;
-  background-color: #fec;
-  border: solid 0.4rem lightgray;
-  border-radius: 50%;
-  position: absolute;
-}
-a:hover, a:focus {
-  color: #c21;
-  outline: none;
-}
-a:hover .link-main:hover, a:hover .link-note:hover {
-  color: #004;
-}
-a:hover .link-note:not(:hover)::after, a:focus .link-note::after {
-  background-color: currentColor;
-}
+
+
+
+
 @media (max-width: 40em) {
   body {
     padding-right: 0.5em;
@@ -88,22 +50,8 @@ a:hover .link-note:not(:hover)::after, a:focus .link-note::after {
     clear: none;
     transition: transform 0.2s ease-out;
   }
-  a .link-note::after {
-    top: 0;
-    left: -1rem;
-    width: 2.1em;
-    height: 2.1em;
-    border-width: 0.7em;
   }
-  a:hover .link-note, a:focus .link-note {
-    transition-timing-function: ease-in;
-    transform: translateX(-10rem);
-    color: #004;
-  }
-  a:hover .link-note::after, a:focus .link-note::after {
-    background-color: currentColor;
-  }
-}
+ 
             </style>
 </head>
 <body><span id="body_style" style="width=100%!important;min-width:100%!
@@ -324,7 +272,7 @@ system,BlinkMacSystemFont,Helvetica,Arial,sans-serif!important;padding:0 30px;fo
 size:17px;line-height:24px;font-style:normal;">
 <p style="margin:0">"March Mammal Madness" – <a href="https://skimmth.is/2tSarLe" 
 
-target="_blank" style="color:#00b2a9;text-decoration:none;"><span class="link-main">Think: March Madness.</span><span role="complementary" class="link-note"><div class="ournews-multibar" class="link-note" data-source="https://www.theverge.com/2019/3/4/18250096/march-mammal-madness-science-animals-biology" data-icons="newstrition, factcheck" data-site="ffi"></div></span></a> But 
+target="_blank" style="color:#00b2a9;text-decoration:none;"><span class="link-main">Think: March Madness.</span><span role="complementary" class="link-note"><div class="ournews-multibar" data-source="https://www.theverge.com/2019/3/4/18250096/march-mammal-madness-science-animals-biology" data-icons="newstrition, factcheck" data-site="ffi"></div></span></a> But 
 
 the bracket lets you pick which animals would come out on top in a theoretical face-off. 
 
