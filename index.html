@@ -4,7 +4,7 @@
 
 src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
            <style>
-          body {
+body {
   font-family: Georgia, sans-serif;
   background-color: lightGray;
   color: #004;
@@ -28,7 +28,7 @@ p {
   float: right;
   clear: right;
   position: relative;
-  width: 16em;
+  width: 11rem;
   box-sizing: border-box;
   margin-right: -12rem;
   padding: 0.5rem;
@@ -37,22 +37,52 @@ p {
   font-size: 90%;
   line-height: 1.1;
 }
-
-
-
-
+.link-note::before {
+  content: " ";
+  display: block;
+  margin: 0 0.2rem 0.2rem 0.6rem;
+}
+.link-note.book::before {
+  content: "📖";
+} 
+ .link-note.article::before {
+  content: "📰";
+} 
+.link-note.picture::before {
+  content: "🖼️";
+} 
+.link-note::after {
+  content: "";
+  display: block;
+  box-sizing: border-box;
+  width: 1.2rem; height: 1.2rem;
+  top: 0.25rem;
+  left: -0.5rem;
+  background-color: #fec;
+  border: solid 0.4rem lightgray;
+  border-radius: 50%;
+  position: absolute;
+}
+a:hover, a:focus {
+  color: #c21;
+  outline: none;
+}
+a:hover .link-main:hover, a:hover .link-note:hover {
+  color: #004;
+}
+a:hover .link-note:not(:hover)::after, a:focus .link-note::after {
+  background-color: currentColor;
+}
 @media (max-width: 40em) {
   body {
     padding-right: 0.5em;
     margin: 0;
   }
-.link-note {
+ .link-note {
     margin-top: 1.4rem;
     clear: none;
     transition: transform 0.2s ease-out;
   }
-  }
- 
             </style>
 </head>
 <body><span id="body_style" style="width=100%!important;min-width:100%!
